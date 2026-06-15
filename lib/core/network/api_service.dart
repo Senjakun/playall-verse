@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../constants/app_constants.dart';
-import '../../shared/models/content_model.dart';
+import 'package:playall_verse/shared/models/content_model.dart';
 
 class ApiService {
   static final ApiService _instance = ApiService._internal();

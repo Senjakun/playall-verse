@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../core/theme/app_colors.dart';
-import '../../core/network/api_service.dart';
-import '../../shared/models/content_model.dart';
-import '../../shared/widgets/content_card.dart';
-import '../../shared/widgets/common_widgets.dart';
-import '../../features/anime/presentation/pages/content_detail_page.dart';
+import 'package:playall_verse/core/theme/app_colors.dart';
+import 'package:playall_verse/core/network/api_service.dart';
+import 'package:playall_verse/shared/models/content_model.dart';
+import 'package:playall_verse/shared/widgets/content_card.dart';
+import 'package:playall_verse/shared/widgets/common_widgets.dart';
+import 'package:playall_verse/features/anime/presentation/pages/content_detail_page.dart';
 
 class ContentListPage extends StatefulWidget {
   final String type;

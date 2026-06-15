@@ -3,14 +3,14 @@ import 'package:flutter/services.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../../core/theme/app_colors.dart';
-import '../../core/network/api_service.dart';
-import '../../shared/models/content_model.dart';
-import '../../shared/widgets/content_card.dart';
-import '../../shared/widgets/common_widgets.dart';
-import '../search/presentation/pages/search_page.dart';
-import '../anime/presentation/pages/content_list_page.dart';
-import '../anime/presentation/pages/content_detail_page.dart';
+import 'package:playall_verse/core/theme/app_colors.dart';
+import 'package:playall_verse/core/network/api_service.dart';
+import 'package:playall_verse/shared/models/content_model.dart';
+import 'package:playall_verse/shared/widgets/content_card.dart';
+import 'package:playall_verse/shared/widgets/common_widgets.dart';
+import 'package:playall_verse/features/search/presentation/pages/search_page.dart';
+import 'package:playall_verse/features/anime/presentation/pages/content_list_page.dart';
+import 'package:playall_verse/features/anime/presentation/pages/content_detail_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

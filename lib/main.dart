@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'core/theme/app_colors.dart';
-import 'core/theme/app_theme.dart';
-import 'features/home/presentation/pages/home_page.dart';
-import 'features/anime/presentation/pages/content_list_page.dart';
-import 'features/search/presentation/pages/search_page.dart';
+import 'package:playall_verse/core/theme/app_colors.dart';
+import 'package:playall_verse/core/theme/app_theme.dart';
+import 'package:playall_verse/features/home/presentation/pages/home_page.dart';
+import 'package:playall_verse/features/anime/presentation/pages/content_list_page.dart';
+import 'package:playall_verse/features/search/presentation/pages/search_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:readmore/readmore.dart';
-import '../../core/theme/app_colors.dart';
-import '../../core/network/api_service.dart';
-import '../../shared/models/content_model.dart';
-import '../../shared/widgets/common_widgets.dart';
+import 'package:playall_verse/core/theme/app_colors.dart';
+import 'package:playall_verse/core/network/api_service.dart';
+import 'package:playall_verse/shared/models/content_model.dart';
+import 'package:playall_verse/shared/widgets/common_widgets.dart';
 
 class ContentDetailPage extends StatefulWidget {
   final ContentModel content;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:shimmer/shimmer.dart';
-import '../../core/theme/app_colors.dart';
-import '../../shared/models/content_model.dart';
+import 'package:playall_verse/core/theme/app_colors.dart';
+import 'package:playall_verse/shared/models/content_model.dart';
 
 class ContentCard extends StatelessWidget {
   final ContentModel content;
