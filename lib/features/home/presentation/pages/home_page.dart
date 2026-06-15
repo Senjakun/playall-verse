@@ -28,6 +28,8 @@ class _HomePageState extends State<HomePage> {
   bool _isLoading = true;
   int _bannerIndex = 0;
 
+  String _errorMessage = '';
+
   @override
   void initState() {
     super.initState();
@@ -48,10 +50,19 @@ class _HomePageState extends State<HomePage> {
           _novel = results[2].content;
           _featured = [..._anime.take(5)];
           _isLoading = false;
+          _errorMessage = '';
         });
       }
     } catch (e) {
-      if (mounted) setState(() => _isLoading = false);
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+          _errorMessage = 'Gagal memuat data: ${e.toString()}';
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(_errorMessage), backgroundColor: Colors.red),
+        );
+      }
     }
   }
 

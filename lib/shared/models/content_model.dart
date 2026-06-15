@@ -63,7 +63,8 @@ class ContentModel {
 
   String get proxyPosterUrl {
     if (posterUrl == null || posterUrl!.isEmpty) return '';
-    return 'https://playall.dev/img-proxy/?url=${Uri.encodeComponent(posterUrl!)}';
+    // Hapus proxy, gunakan URL aslinya langsung agar tidak error di Android
+    return posterUrl!;
   }
 }
 

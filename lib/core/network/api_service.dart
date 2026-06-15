@@ -26,8 +26,10 @@ class ApiService {
       if (response.statusCode == 200) {
         return jsonDecode(response.body);
       }
+      print('API Error: ${response.statusCode} - ${response.body}');
       throw Exception('HTTP ${response.statusCode}');
     } catch (e) {
+      print('Network Error: $e');
       throw Exception('Network error: $e');
     }
   }
