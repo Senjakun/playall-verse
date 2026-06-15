@@ -1,7 +1,17 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:http/http.dart' as http;
 import '../constants/app_constants.dart';
-import 'package:playall_verse/shared/models/content_model.dart';
+import '../../shared/models/content_model.dart';
+
+// Class untuk Bypass SSL Certificate yang tidak dikenali
+class MyHttpOverrides extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext? context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback = (X509Certificate cert, String host, int port) => true;
+  }
+}
 
 class ApiService {
   static final ApiService _instance = ApiService._internal();
