@@ -1,0 +1,30 @@
+name: playall_verse
+description: PlayAll Verse - Anime, Manga, Novel & Donghua Streaming App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  carousel_slider: ^5.0.0
+  smooth_page_indicator: ^1.2.0+3
+  readmore: ^3.0.0
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
